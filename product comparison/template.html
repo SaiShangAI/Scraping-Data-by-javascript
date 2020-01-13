@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <link href="../CSS/jquery-ui.css" rel="stylesheet">
+    <link href="CSS/sai-ui.css" rel="stylesheet"> 
+    <script src="../external/jquery/jquery.js"></script>
+    <script src="../Script/jquery-ui.js"></script>
+
+    <style>
+        .GirdSlot {
+            width: 50px;
+            height: 50px;
+        }
+         .ui-progressbar {
+    position: relative;
+  }
+   
+    </style>
+</head>
+
+
+<body>
+
+<!------------feature-------------->
+    <div id='template-AddHeader'>
+        <label for='{~featureName}_Feature_Head' class='Feature_Head_LB_Class'>{featureName}</label>
+        <input type='checkbox' id='{~featureName}_Feature_Head' class='Feature_Head_CB_Class'>
+    </div>
+
+    <div id='template-NumberFeature' style='width:10%'>
+        <div class='Feature_Detail_EL'>
+            <div class='Feature_Detail_EL_Value'> 000 </div>
+        </div>
+        <div class='Feature_Detail_EL Feature_Detail_SlideBar' name='{fullName}'></div>
+    </div>
+
+    <div id='template-VectorFeature' style='width:10%'>
+        <div class='Feature_Detail_EL'>
+            <div class='Feature_Detail_EL_Value'> 000 </div>
+            <div class='Feature_Detail_EL_Value'> 000 </div>
+        </div>
+        <div class='Feature_Detail_EL Feature_Detail_SlideBar' name='{fullName}'></div>
+    </div>
+
+    <div id='template-CheckBoxFeature'>
+        <label for='{~name}_{~fullName}_SmallCheckBox' class='Feature_Small_CheckBoxLB'>{name}</label>
+        <input type='checkbox' id='{~name}_{~fullName}_SmallCheckBox' class='Feature_Small_CheckBox' featureName='{fullName}' checkName='{name}' valueID='{keyName}'>
+    </div>
+
+<!------------RS-------------->
+    <div id='template-Item'>
+        <label for="{ID}_Item_CB" class="circleItemLB" id="{ID}_Item_LB" tooltip='{ID}'></label>
+        <input type="checkbox" id="{ID}_Item_CB" class="circleItem" productID="{ID}">
+    </div>
+
+<!------------Comparison-------------->
+    <div id='template-CompareGirdSlot'> 
+        <li class='GirdSlot ui-widget-content' id="{ID}_{SlotName}"> 
+        </li> 
+    </div>
+     
+    <div id="template-Comparison-Tab">
+
+        <label for="{~FeatureGroupName}_TabIN" class='Comparison_TabLB' id='{~FeatureGroupName}_TabLB'>{FeatureGroupName}</label>
+        <input type="radio" class="Comparison_TabIN" id='{~FeatureGroupName}_TabIN' name='Comparison_Tab' GroupName='{FeatureGroupName}'> 
+
+    </div>
+
+<!-------------------ToolTip-------------------->
+<p>******************************************** </p>
+<div id='template-ToolTip'>
+    <div class='ToolTip' >
+        <li class="tooltip-Title">
+             <div>{Title}</h2>
+         </li>
+         <li class="tooltip-img  ">
+             <img src='{img}' height="150" width="180"></img>
+         </li>
+         <li class="tooltip-Des">
+             <div>{Comparison}</h2>
+         </li>
+
+    </div>
+</div>
+ 
+
+ <!-------------------Visulization-------------------->
+<h1>******************************************** </h1>
+<h1>******************************************** </h1>
+<h1>******************************************** </h1>
+<h1>******************************************** </h1>
+<h1>******************************************** </h1>
+<div id ='template-bar' style='width:300px' >
+<div class='sai-bar'>
+    <div class='sai-ProgressBarValue'>{value} {unit} </div>
+
+<div class='sai-ProgressBar' featureName='{featureName}' productID='{productID}' style='width:00%'>
+
+</div>
+</div>
+<div >
+</body>
+
+
+</html>
+
+
+
+    <script>
+        $('.circleItem').checkboxradio({
+            icon: false
+        })
+        $('.Feature_Head_CB_Class').checkboxradio({
+            icon: false
+        })
+        $('.Feature_Detail_SlideBar').slider({
+            range: true,
+        })
+        $('.Feature_Small_CheckBox').checkboxradio({
+            icon: false
+        })
+        $('.GirdSlot').draggable();
+        $('.Comparison_TabIN').checkboxradio({icon:false})
+        $('.Comparison_TabLB').removeClass('ui-corner-all').addClass('ui-corner-top');
+    
+    
+    
+ 
+     
+    </script>

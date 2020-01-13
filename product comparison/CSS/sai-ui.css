@@ -1,0 +1,251 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#LeftFeature_Content {
+    height: 100% !important;
+}
+
+#sai-LeftFeature {
+    padding: 5px;
+}
+
+#sai-RSPart {
+    padding: 35px !important;
+}
+
+#sai-ComparePart {
+    padding: 5px; 
+}
+
+#sai-AllList {
+    padding: 5px;
+    margin: 0px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+#sai-AllList li {
+    padding: 5px;
+    margin: 3px;
+    float: left;
+}
+
+#sai-MidDragBar {
+    width: 10px;
+    cursor: e-resize;
+    z-index: 999999;
+}
+
+#sai-MidTBDragBar {
+    height: 10px;
+    cursor: n-resize;
+    z-index: 999999;
+}
+
+.Feature_Head_LB_Class.ui-checkboxradio-label.ui-corner-top.ui-button.ui-widget.ui-checkboxradio-checked.ui-state-active {
+    border: 1px solid #07811b !important;
+    background: #11ff31 url("images/saiui-diamond_blue_active.png") 50% 50% repeat !important;
+    font-weight: normal !important;
+    color: #ffffff !important;
+}
+
+.circleItemLB.ui-checkboxradio-label.ui-corner-all.ui-button.ui-widget.ui-checkboxradio-checked.ui-state-active {
+    border: 4px solid #44cc44 !important;
+    background: #11ff31;
+}
+
+.Feature_Head_LB_Class {
+    margin: 0px;
+    margin-top: 5px;
+    width: 100%
+}
+
+.Feature_Head_CB_Class {
+    width: 100%
+}
+
+.Feature_Detail_BK_Class {
+    padding: 2px;
+}
+
+.Feature_Detail_EL {
+    margin: 6px;
+}
+
+.Feature_Detail_EL_Value {
+    border: 0;
+    color: #f6931f;
+    font-weight: bold;
+    text-align: center;
+}
+
+.circleItemLB {
+    width: 100px;
+    height: 100px;
+    background-size: 120% !important;
+}
+
+.saiDragBarDrag {
+    border-style: dotted;
+}
+
+
+/************************ axis***************** */
+
+.axis {
+    letter-spacing: 1px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10px, #000 11px, rgba(255, 255, 255, 0) 11px);
+    /* W3C */
+    text-transform: uppercase;
+}
+
+.y-axis {
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: 0 0;
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin: 0 0;
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: 0 0;
+}
+
+.axis:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 5px;
+    left: 100%;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #505050;
+}
+
+.axis div {
+    position: relative;
+    top: 0px;
+    background: #fff;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/************************ gird ***************** */
+
+#RSGird {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.circleItemLB {
+    position: absolute;
+    padding: 1px;
+    margin: 0px;
+}
+
+
+/******************************Comparison**********************************/
+
+#Comparison-Tab {
+    border: 1px solid #d6d6d6;
+    background: #fffffe url(images/tabBackground.png) 100% top repeat;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#Comparison-Content {
+    border: 1px solid #d6d6d6;
+    background: #fffffe url(images/tabBackground.png) 100% top repeat;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* padding: 5px; */
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
+    height: fit-content;
+    width: 100%;
+    list-style-type: none;
+}
+
+.GirdSlot {
+    width: 100px;
+    height: 100px;
+    margin: 0px !important;
+    position:relative;
+}
+
+/******************************Tooltip**********************************/
+.ToolTip{
+    padding: 5px;
+    margin: 0px;
+    width: 500px;
+    height:fit-content;
+    list-style-type: none;
+    float: left;
+}
+.tooltip-img{
+     padding:0px;
+     padding-top:60px;
+     padding-bottom:60px;
+     float:left;
+     border-right: 1px solid #73AD21;
+}
+.tooltip-Title{
+    padding: 1px;
+    float: left;
+    text-align: left;
+    border-bottom: 3px solid #73AD21;
+}
+.tooltip-Des{
+    
+    padding: 1px;
+    float: left;
+    text-align: left;
+    border-bottom: 3px solid #73AD21;
+}
+.custom-tooltip-styling{
+    max-width:100%;
+    padding:0;
+    background:white !important;
+}
+.sai-ProgressBar{
+    /* box-shadow: 4px 2px 5px 0px #768b56; */
+    background: #24dd20 url(images/progressBar.png) 50% 50% repeat-x;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #858885;
+}
+
+.sai-ProgressBarValue{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    text-size-adjust: auto;
+    text-shadow: 2px 2px 5px #aaaaaa;
+    vertical-align: middle;
+    height: 100%;
+    font-size: 18px;
+}
+.sai-bar{
+    /* width: 200px; */
+    position: relative;
+}

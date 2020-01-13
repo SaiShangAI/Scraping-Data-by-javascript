@@ -1,0 +1,9 @@
+website/node_modules/
+website/public/Image/*
+website/public/Image/
+website/public/images/
+scraping data and creating DB/scrapeImformation-createDB/Image/
+scraping data and creating DB/scrapeImformation-createDB/node_modules/
+product comparison/Image/
+product comparison/node_modules/
+product comparison/CSS/images
